@@ -1,0 +1,175 @@
+.rs-container * {
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.rs-container {
+    font-family: 'Muli', sans-serif;
+    height: 33px;
+    position: relative;
+}
+
+.rs-container .rs-bg,
+.rs-container .rs-selected {
+    background-color: #eee;
+    border: 1px solid #ededed;
+    height: 7px;
+    left: 0;
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.rs-container .rs-selected {
+    background-color: #adadad;
+    /*border: 1px solid #adadad;*/
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    width: 0;
+}
+
+.rs-container.disabled .rs-selected {
+    background-color: #ccc;
+    border-color: #bbb;
+}
+
+.rs-container .rs-pointer {
+    background-color: #fff;
+    /*border: 1px solid #bbb;*/
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    height: 15px;
+    left: -10px;
+    position: absolute;
+    top: 0;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    width: 15px;
+    box-shadow: inset 0 0 1px #FFF, inset 0 1px 6px #ebebeb, 1px 1px 4px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: inset 0 0 1px #FFF, inset 0 1px 6px #ebebeb, 1px 1px 4px rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset 0 0 1px #FFF, inset 0 1px 6px #ebebeb, 1px 1px 4px rgba(0, 0, 0, .1);
+    -ms-box-shadow: inset 0 0 1px #FFF, inset 0 1px 6px #ebebeb, 1px 1px 4px rgba(0, 0, 0, .1);
+    -o-box-shadow: inset 0 0 1px #FFF, inset 0 1px 6px #ebebeb, 1px 1px 4px rgba(0, 0, 0, .1);
+    background: #dfdfdf;
+}
+
+.rs-container.disabled .rs-pointer {
+    border-color: #ccc;
+    cursor: default;
+}
+
+.rs-container .rs-pointer::after,
+.rs-container .rs-pointer::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 9px;
+    background-color: transparent;
+    left: 12px;
+    top: 5px;
+}
+
+.rs-container .rs-pointer::after {
+    left: auto;
+    right: 12px;
+}
+
+.rs-container.sliding .rs-pointer,
+.rs-container.sliding .rs-selected {
+    transition: none;
+}
+
+.rs-container .rs-scale {
+    left: 0;
+    position: absolute;
+    top: 5px;
+    white-space: nowrap;
+}
+
+.rs-container .rs-scale span {
+    float: left;
+    position: relative;
+}
+
+.rs-container .rs-scale span::before {
+    background-color: #ededed;
+    content: "";
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 0;
+}
+
+.rs-container.rs-noscale span::before {
+    display: none;
+}
+
+.rs-container.rs-noscale span:first-child::before,
+.rs-container.rs-noscale span:last-child::before {
+    display: block;
+}
+
+.rs-container .rs-scale span:last-child {
+    margin-left: -1px;
+    width: 0;
+}
+
+.rs-container .rs-scale span ins {
+    color: #333;
+    display: inline-block;
+    font-size: 0;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.rs-container.disabled .rs-scale span ins {
+    color: #999;
+}
+
+.rs-tooltip {
+    color: #333;
+    width: auto;
+    min-width: 50px;
+    height: 30px;
+    background: transparent;
+    border: 0 none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: absolute;
+    transform: translate(-50%, -35px);
+    left: 13px;
+    text-align: center;
+    font-size: 12px;
+    padding: 6px 0px 0;
+    bottom: -64px;
+    color: #adadad;
+}
+
+.rs-container.disabled .rs-tooltip {
+    border-color: #ccc;
+    color: #999;
+}
