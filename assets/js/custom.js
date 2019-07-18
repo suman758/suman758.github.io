@@ -45,7 +45,7 @@ $(document).ready(function(){
     });
 
     //Starts Owl Carousel
-$('.category-carousel').owlCarousel({
+$('.owl-theme').owlCarousel({
     items: 7,
     loop: true,
     nav: true,
