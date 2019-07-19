@@ -343,7 +343,7 @@ let HomeComponent = class HomeComponent {
                 600: {
                     items: 3
                 },
-                940: {
+                740: {
                     items: 7
                 }
             },

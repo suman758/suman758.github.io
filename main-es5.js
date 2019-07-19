@@ -354,7 +354,7 @@ var HomeComponent = /** @class */ (function () {
                 600: {
                     items: 3
                 },
-                940: {
+                740: {
                     items: 7
                 }
             },
