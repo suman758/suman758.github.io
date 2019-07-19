@@ -45,29 +45,29 @@ $(document).ready(function(){
     });
 
     //Starts Owl Carousel
-$('.owl-theme').owlCarousel({
-    items: 7,
-    loop: true,
-    nav: true,
-    autoplay: true,
-    margin:0,
-    navText: ["‹","›"],
-    pagination:true,
-    autoplayHoverPause: true,
-    responsive:{
-        0:{
-            items:4
-        },
-        480 : {
-            items:4
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:7
-        }
-    }
-});
+// $('.owl-theme').owlCarousel({
+//     items: 7,
+//     loop: true,
+//     nav: true,
+//     autoplay: true,
+//     margin:0,
+//     navText: ["‹","›"],
+//     pagination:true,
+//     autoplayHoverPause: true,
+//     responsive:{
+//         0:{
+//             items:4
+//         },
+//         480 : {
+//             items:4
+//         },
+//         600:{
+//             items:3
+//         },
+//         1000:{
+//             items:7
+//         }
+//     }
+// });
 });
 
