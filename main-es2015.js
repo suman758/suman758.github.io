@@ -335,15 +335,15 @@ let HomeComponent = class HomeComponent {
             navSpeed: 700,
             responsive: {
                 0: {
-                    items: 4
+                    items: 2
                 },
-                480: {
-                    items: 4
+                420: {
+                    items: 3
                 },
                 600: {
                     items: 3
                 },
-                1000: {
+                940: {
                     items: 7
                 }
             },

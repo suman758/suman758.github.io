@@ -1304,12 +1304,13 @@ input, select, textarea {
 
 .btm-fixed-category-slider .owl-carousel .owl-nav {
 	position: relative;
+	margin-top: 0;
 }
 
 .btm-fixed-category-slider .owl-carousel .owl-prev {
 	position: absolute;
 	left: -30px;
-	top: -100px;
+	top: -105px;
 	border: 0 none;
 	font-size: 48px;
 	padding: 0;
@@ -1322,12 +1323,13 @@ input, select, textarea {
 	outline: 0 none;
 	background: transparent;
 	color: #e6e6e6;
+	margin: 0;
 }
 
 .btm-fixed-category-slider .owl-carousel .owl-next {
 	position: absolute;
 	right: -30px;
-	top: -100px;
+	top: -105px;
 	border: 0 none;
 	font-size: 48px;
 	padding: 0;
@@ -1340,6 +1342,17 @@ input, select, textarea {
 	outline: 0 none;
 	background: transparent;
 	color: #e6e6e6;
+	margin: 0;
+}
+
+.btm-fixed-category-slider .owl-carousel .owl-prev:hover {
+	background: transparent;
+	color: #ccc;
+}
+
+.btm-fixed-category-slider .owl-carousel .owl-next:hover {
+	background: transparent;
+	color: #ccc;
 }
 
 
@@ -1807,64 +1820,6 @@ input, select, textarea {
 		top: 24px;
 	}
 
-	.btm-fixed-category-slider .owl-carousel .item .slider p {
-		display: none;
-	}
-
-	.btm-fixed-category-slider .owl-carousel .item {
-		border: 0;
-		margin: 10px 25px;
-		width: 52px;
-		height: 50px;
-		background: #00b7d6;
-		border-radius: 50%;
-		position: relative;
-	}
-
-	.btm-fixed-category-slider .owl-carousel .item .slider img {
-		-webkit-filter: brightness(0) invert(1);
-		filter: brightness(0) invert(1);
-		width: 33px;
-	}
-
-	.btm-fixed-category-slider .owl-carousel .item .slider h3 {
-		display: none;
-	}
-
-	.btm-fixed-category-slider .owl-carousel .item .mobile-bottom h3 {
-		display: block;
-		font-size: 12px;
-		position: absolute;
-		z-index: 999999;
-		top: 59px;
-		overflow: visible;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-webkit-transform: translate(-50%, -50%);
-		-moz-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		-o-transform: translate(-50%, -50%);
-		width: 100%;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-	}
-
-	.btm-fixed-category-slider .owl-carousel .item .slider p {
-		display: none;
-	}
-
-	.owl-carousel .owl-stage-outer {
-		height: 78px;
-	}
-
-	.btm-fixed-category-slider .owl-carousel .owl-prev {
-		top: -67px;
-	}
-
-	.btm-fixed-category-slider .owl-carousel .owl-next {
-		top: -67px;
-	}
 }
 
 @media only screen and (max-width:480px) {
