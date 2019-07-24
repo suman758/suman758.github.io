@@ -4,16 +4,17 @@
     var init = function () {                
         var slider2 = new rSlider({
             target: '#time_range',
-            values: [5+'km',6+'km',7+'km',8+'km',9+'km',10+'km'],
+            values: [1+'km',2+'km',3+'km',4+'km',5+'km',6+'km'],
             step: 1,
             range: false,
-            set: [5+'km',10+'km'],
+            set: [1+'km',6+'km'],
             tooltip: true,
             scale: true,
             labels: true,
             width: null,
             onChange: function (vals) {
                 console.log(vals);
+                $('#distance').val(vals);
             }
         });
     };

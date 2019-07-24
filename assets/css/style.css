@@ -44,6 +44,16 @@ a:focus {
 	-ms-box-shadow: none !important;
 	-o-box-shadow: none !important;
 	box-shadow: none !important;
+	outline: 0;
+}
+
+button:focus {
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-ms-box-shadow: none !important;
+	-o-box-shadow: none !important;
+	box-shadow: none !important;
+	outline: 0 none !important;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
@@ -993,6 +1003,40 @@ input, select, textarea {
 	margin-top: 15px;
 }
 
+.fitness-categories .multiselect-container>li>a>label {
+	padding: 5px 10px;
+	display: block;
+}
+
+.fitness-categories .btn-group {
+	width: 100%;
+	display: block;
+}
+
+.fitness-categories .btn-group .btn {
+	width: 100%;
+	display: block;
+	text-align: left;
+	border-bottom: 1px solid #ced4da;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+}
+
+span.multiselect-selected-text {
+	color: #adadad;
+}
+
+.fitness-categories .multiselect-container>li>a {
+	display: block;
+}
+
+.fitness-categories .multiselect-container.dropdown-menu {
+	width: 100%;
+}
+
 .detact-search input, .search-fitness input, .fitness-categories select {
 	position: relative;
 	font-size: 14px;
@@ -1023,8 +1067,12 @@ input, select, textarea {
 
 .detact-search img, .search-fitness img, .fitness-categories img {
 	position: absolute;
-	right: 12px;
+	right: 17px;
 	top: 25px;
+}
+
+.fitness-categories button.dropdown-toggle::after {
+	display: none;
 }
 
 .detact-search input::placeholder, .search-fitness input::placeholder, .fitness-categories select::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -1174,7 +1222,7 @@ input, select, textarea {
 }
 
 .link-line ul li a {
-	background: #8f8f8f;
+	background: #fab32c;
 	padding: 5px;
 	display: inline-block;
 	color: #fff;
@@ -1196,7 +1244,7 @@ input, select, textarea {
 }
 
 .link-line ul li a:hover {
-	background: #fab32c;
+	background: #8f8f8f;
 }
 
 .link-line ul li:last-child {
@@ -1233,6 +1281,27 @@ input, select, textarea {
 	-ms-border-radius: 4px;
 	-o-border-radius: 4px;
 	margin: 5px;
+}
+
+.btm-fixed-category-slider .owl-carousel .item label  {
+	margin: 0;
+	display: block;
+}
+
+.btm-fixed-category-slider .owl-carousel .item label:before {
+	position: absolute;
+	z-index: 100;
+}
+:checked+label:before {
+	
+}
+.btm-fixed-category-slider .owl-carousel .item input[type=checkbox] {
+	display: none;
+}
+
+.btm-fixed-category-slider .owl-carousel .item input[type=checkbox]:checked + label
+{
+	display:inline-block;
 }
 
 .btm-fixed-category-slider .owl-carousel .item .slider {
@@ -1415,7 +1484,7 @@ input, select, textarea {
 	color: #b4b4b4;
 	position: absolute;
 	right: 50px;
-	top: 20px;
+	top: 14px;
 	border-right: 1px solid #b4b4b4;
 	padding: 0 35px;
 }
@@ -1612,6 +1681,15 @@ input, select, textarea {
 .section-listbox ul li a {
 	display: table;
 	outline: none !important;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+}
+
+.section-listbox ul li a:hover {
+	color: #fab32c;
 }
 
 .section-listbox ul li .inline-list {
@@ -1634,8 +1712,14 @@ input, select, textarea {
 }
 
 .section-listbox ul li .inline-list:hover {
-	background: #00b7d6;
+    background: #fab32c;
+    border: 1px solid #fab32c;
+    color: #fab32c;
 }
+
+/*.section-listbox ul li .inline-list:hover {
+	background: #00b7d6;
+}*/
 
 .section-listbox ul li .inline-list:hover img {
 	-webkit-filter: brightness(0) invert(1);
@@ -1689,6 +1773,21 @@ input, select, textarea {
 	border: 1px solid #cccccc;
 	display: table;
 	margin: 20px auto;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+}
+
+.section-subheader button.btn.btn-primary.add-button:hover {
+	background: #fab32c;
+	color: #ffffff;
+	border: 1px solid #fab32c;
+}
+
+.section-subheader button.btn.btn-primary.add-button:hover .fa {
+	color: #ffffff;
 }
 
 .section-subheader button.btn.btn-primary.add-button .fa {
@@ -1742,6 +1841,29 @@ input, select, textarea {
 }
 
 @media only screen and (max-width:1023px) {
+
+	span.multiselect-selected-text {
+		color: #000000;
+	}
+
+	.detact-search input::placeholder, .search-fitness input::placeholder, .fitness-categories select::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: #000000;
+		opacity: 1; /* Firefox */
+	}
+
+	.detact-search:-ms-input-placeholder, .search-fitness input:-ms-input-placeholder, .fitness-categories select:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: #000000;
+	}
+
+	.detact-search input::-ms-input-placeholder, .search-fitness input::-ms-input-placeholder, .fitness-categories select::-ms-input-placeholder { /* Microsoft Edge */
+		color: #000000;
+	}
+
+	.distance-box label {
+		color: #000000;
+		margin: 0 0 0 12px;
+	}
+
 	.map-content .col-md-3 {
 		display: none;
 	}
