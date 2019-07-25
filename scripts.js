@@ -12075,6 +12075,20 @@ $(document).ready(function(){
         }
     });
 
+
+
+    // $('.slider').on('click', function(event){
+    //     var $this = $(this);
+    //     $(".btn-primary").addClass("highlight");
+    // });
+
+
+    
+    // $(".img-check").click(function(){
+    //     $(this).toggleClass("check");
+    // });
+    
+
     //Starts Owl Carousel
 // $('.owl-theme').owlCarousel({
 //     items: 7,
