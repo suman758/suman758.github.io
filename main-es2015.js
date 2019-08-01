@@ -542,6 +542,7 @@ let HomeComponent = class HomeComponent {
         console.log('dragEnd', m, $event);
     }
     ngOnInit() {
+        this.getLocation();
         this.loaderService.display(true);
         this.httpclient.get(this.serverUrl + 'category/api-category').subscribe(data => {
             this.loaderService.display(false);
@@ -584,7 +585,6 @@ let HomeComponent = class HomeComponent {
                 //});
             }
         });
-        this.getLocation();
     }
     catdetails(cat_id, allcats) {
         var catall = allcats.filter(function (cats) {
@@ -633,6 +633,7 @@ let HomeComponent = class HomeComponent {
                         "Longitude: " + position.coords.longitude);
                     this.lat = position.coords.latitude;
                     this.lng = position.coords.longitude;
+                    this.getAddress(this.lat, this.lng);
                 }
             }, (error) => console.log(error));
         }

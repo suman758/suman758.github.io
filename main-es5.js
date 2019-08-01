@@ -558,6 +558,7 @@ var HomeComponent = /** @class */ (function () {
     };
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.getLocation();
         this.loaderService.display(true);
         this.httpclient.get(this.serverUrl + 'category/api-category').subscribe(function (data) {
             _this.loaderService.display(false);
@@ -600,7 +601,6 @@ var HomeComponent = /** @class */ (function () {
                 //});
             }
         });
-        this.getLocation();
     };
     HomeComponent.prototype.catdetails = function (cat_id, allcats) {
         var catall = allcats.filter(function (cats) {
@@ -651,6 +651,7 @@ var HomeComponent = /** @class */ (function () {
                         "Longitude: " + position.coords.longitude);
                     _this.lat = position.coords.latitude;
                     _this.lng = position.coords.longitude;
+                    _this.getAddress(_this.lat, _this.lng);
                 }
             }, function (error) { return console.log(error); });
         }
