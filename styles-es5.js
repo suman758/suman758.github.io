@@ -68,12 +68,12 @@ module.exports = [[module.i, "/**\r\n * Owl Carousel v2.3.4\r\n * Copyright 2013
 
 /***/ "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/styles.scss":
 /*!**********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src??embedded!./node_modules/sass-loader/lib/loader.js??ref--15-3!./src/styles.scss ***!
+  !*** ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src??embedded!./node_modules/sass-loader/lib/loader.js??ref--13-3!./src/styles.scss ***!
   \**********************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXJ0aG9zZW4vRGVza3RvcC90cmFpbi90cmFpbmFzeW91Z28tYW5ndWxhcjcvc3JjL3N0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDhFQUFBIiwiZmlsZSI6InNyYy9zdHlsZXMuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFlvdSBjYW4gYWRkIGdsb2JhbCBzdHlsZXMgdG8gdGhpcyBmaWxlLCBhbmQgYWxzbyBpbXBvcnQgb3RoZXIgc3R5bGUgZmlsZXMgKi9cclxuIl19 */", '', '']]
+module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXJ0aG9zZW4vRG9jdW1lbnRzL3RyYWluYXN5b3Vnby1hbmd1bGFyNy9zcmMvc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsOEVBQUEiLCJmaWxlIjoic3JjL3N0eWxlcy5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogWW91IGNhbiBhZGQgZ2xvYmFsIHN0eWxlcyB0byB0aGlzIGZpbGUsIGFuZCBhbHNvIGltcG9ydCBvdGhlciBzdHlsZSBmaWxlcyAqL1xyXG4iXX0= */", '', '']]
 
 /***/ }),
 
@@ -856,7 +856,7 @@ if(false) {}
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!../node_modules/postcss-loader/src??embedded!../node_modules/sass-loader/lib/loader.js??ref--15-3!./styles.scss */ "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/styles.scss");
+var content = __webpack_require__(/*! !../node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!../node_modules/postcss-loader/src??embedded!../node_modules/sass-loader/lib/loader.js??ref--13-3!./styles.scss */ "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/styles.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -885,15 +885,15 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/parthosen/Desktop/train/trainasyougo-angular7/src/styles.scss */"./src/styles.scss");
-__webpack_require__(/*! /Users/parthosen/Desktop/train/trainasyougo-angular7/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
-__webpack_require__(/*! /Users/parthosen/Desktop/train/trainasyougo-angular7/node_modules/font-awesome/css/font-awesome.css */"./node_modules/font-awesome/css/font-awesome.css");
-__webpack_require__(/*! /Users/parthosen/Desktop/train/trainasyougo-angular7/node_modules/bootstrap-multiselect/dist/css/bootstrap-multiselect.css */"./node_modules/bootstrap-multiselect/dist/css/bootstrap-multiselect.css");
-__webpack_require__(/*! /Users/parthosen/Desktop/train/trainasyougo-angular7/node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css */"./node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css");
-__webpack_require__(/*! /Users/parthosen/Desktop/train/trainasyougo-angular7/node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css */"./node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css");
-__webpack_require__(/*! /Users/parthosen/Desktop/train/trainasyougo-angular7/node_modules/animate.css/animate.min.css */"./node_modules/animate.css/animate.min.css");
-__webpack_require__(/*! /Users/parthosen/Desktop/train/trainasyougo-angular7/src/assets/css/rSlider.min.css */"./src/assets/css/rSlider.min.css");
-module.exports = __webpack_require__(/*! /Users/parthosen/Desktop/train/trainasyougo-angular7/src/assets/css/style.css */"./src/assets/css/style.css");
+__webpack_require__(/*! /Users/parthosen/Documents/trainasyougo-angular7/src/styles.scss */"./src/styles.scss");
+__webpack_require__(/*! /Users/parthosen/Documents/trainasyougo-angular7/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+__webpack_require__(/*! /Users/parthosen/Documents/trainasyougo-angular7/node_modules/font-awesome/css/font-awesome.css */"./node_modules/font-awesome/css/font-awesome.css");
+__webpack_require__(/*! /Users/parthosen/Documents/trainasyougo-angular7/node_modules/bootstrap-multiselect/dist/css/bootstrap-multiselect.css */"./node_modules/bootstrap-multiselect/dist/css/bootstrap-multiselect.css");
+__webpack_require__(/*! /Users/parthosen/Documents/trainasyougo-angular7/node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css */"./node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css");
+__webpack_require__(/*! /Users/parthosen/Documents/trainasyougo-angular7/node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css */"./node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css");
+__webpack_require__(/*! /Users/parthosen/Documents/trainasyougo-angular7/node_modules/animate.css/animate.min.css */"./node_modules/animate.css/animate.min.css");
+__webpack_require__(/*! /Users/parthosen/Documents/trainasyougo-angular7/src/assets/css/rSlider.min.css */"./src/assets/css/rSlider.min.css");
+module.exports = __webpack_require__(/*! /Users/parthosen/Documents/trainasyougo-angular7/src/assets/css/style.css */"./src/assets/css/style.css");
 
 
 /***/ })
