@@ -4,10 +4,10 @@
     var init = function () {                
         var slider2 = new rSlider({
             target: '#time_range',
-            values: [1+'km',2+'km',3+'km',4+'km',5+'km',6+'km',7+'km',8+'km',9+'km',10+'km',11+'km',12+'km',13+'km',14+'km',15+'km',16+'km',17+'km',18+'km',19+'km',20+'km'],
+            values: ['1km','2km','3km','4km','5km','6km','7km','8km','9km','10km','11km','12km','13km','14km','15km','16km','17km','18km','19km','20km'],
             step: 1,
             range: false,
-            set: [1+'km',20+'km'],
+            set: ['20km'],
             tooltip: true,
             scale: true,
             labels: true,
