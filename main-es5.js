@@ -373,8 +373,8 @@ var HeaderComponent = /** @class */ (function () {
         }
     };
     HeaderComponent.prototype.handleAddressChange = function (e) {
-        console.log(e.place_id);
-        this.place_id = e.place_id;
+        console.log(e);
+        this.place_id = e.name;
     };
     HeaderComponent.prototype.ngOnInit = function () {
         var _this = this;

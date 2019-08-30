@@ -361,8 +361,8 @@ let HeaderComponent = class HeaderComponent {
         }
     }
     handleAddressChange(e) {
-        console.log(e.place_id);
-        this.place_id = e.place_id;
+        console.log(e);
+        this.place_id = e.name;
     }
     ngOnInit() {
         this.getLocation();
