@@ -570,6 +570,7 @@ let HomeComponent = class HomeComponent {
         });
         this.data.currentMessage.subscribe((message) => {
             console.log(message);
+            this.previous = false;
             this.placeList = message;
             this.markers = [];
             if (this.placeList.length > 0) {

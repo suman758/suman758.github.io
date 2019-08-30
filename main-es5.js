@@ -586,6 +586,7 @@ var HomeComponent = /** @class */ (function () {
         });
         this.data.currentMessage.subscribe(function (message) {
             console.log(message);
+            _this.previous = false;
             _this.placeList = message;
             _this.markers = [];
             if (_this.placeList.length > 0) {
