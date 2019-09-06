@@ -1464,7 +1464,7 @@ span.multiselect-selected-text {
 }
 
 .btm-fixed-category-slider .owl-carousel .item .slider:hover {
-  background: #00b7d6;
+  background: #fab32c;
   color: #fff;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -1514,7 +1514,7 @@ span.multiselect-selected-text {
 }
 
 .btm-fixed-category-slider .owl-carousel .item .slider img {
-  width: auto;
+  width: 100%;
   display: table;
   margin: 0 auto;
 }
@@ -1603,15 +1603,19 @@ span.multiselect-selected-text {
 .expand-side-panel .btn.btn-primary {
   background: rgba(31, 31, 31, .7);
   border: 0 none;
-  height: 50px;
+  height: 41px;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
-  width: 24px;
+  width: 41px;
   padding: 0;
   z-index: 111;
+}
+
+.expand-side-panel .fa {
+  font-size: 19px;
 }
 
 #collapse-expand {
@@ -1762,8 +1766,8 @@ span.multiselect-selected-text {
 .close-btn {
   position: absolute;
   z-index: 111;
-  right: 28px;
-  top: 0px;
+  right: 47px;
+  top: 3px;
 }
 
 .close-btn a {
