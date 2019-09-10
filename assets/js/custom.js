@@ -28,9 +28,9 @@
 //Starts Menu
 
 $(document).ready(function(){
-    $(".header .col-md-9 .fa.fa-bars").click(function(){
-        $(".right-panel .rgt-side").slideToggle();
-    });
+    // $(".header .col-md-9 .fa.fa-bars").click(function(){
+    //     $(".right-panel .rgt-side").slideToggle();
+    // });
 
     $('#exampleFormControlSelect1').multiselect({
         numberDisplayed: 1
@@ -44,6 +44,10 @@ $(document).ready(function(){
             $this.css('background','#00b7d6').addClass('clicked');
         }
     });
+
+    // $(".header .col-md-9 .fa.fa-bars").click(function(){
+    //     $(".right-panel .rgt-side").slideToggle();
+    // });
 
 
 

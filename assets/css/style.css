@@ -1006,6 +1006,16 @@ textarea {
   margin-top: 15px;
 }
 
+.search-fitness {
+  display: inline-block;
+}
+
+.rgt-side h5 {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  font-size: 18px;
+}
+
 .detact-search,
 .search-fitness,
 .search-btn {
@@ -1102,6 +1112,12 @@ span.multiselect-selected-text {
 
 .detact-search img,
 .search-fitness img {
+  position: absolute;
+  right: 17px;
+  top: 25px;
+}
+
+.detact-search .fa, .search-fitness .fa {
   position: absolute;
   right: 17px;
   top: 25px;
@@ -2112,13 +2128,13 @@ span.multiselect-selected-text {
   }
 
   .distance-box label {
-    color: #000000;
+    color: #ffffff;
     margin: 0 0 0 12px;
   }
 
-  /* .map-content .col-md-3 {
+  .map-content .col-md-3 {
     display: none;
-  } */
+  }
 
   .map-content .col-md-9 {
     -ms-flex: 0 0 100%;
@@ -2150,25 +2166,45 @@ span.multiselect-selected-text {
   }
 
   .header .right-panel .rgt-side {
-    display: none;
-    background: #ffffff;
-    width: 400px;
+    display: block;
+    background: rgba(0, 0, 0, 0.7);
+    width: 80%;
     position: absolute;
     right: 0;
     padding: 10px;
     z-index: 999;
-    top: 30px;
+    top: 50px;
     -o-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     box-shadow: 0 0 5px rgba(0, 0, 0, .1);
   }
 
+  .detact-search input,
+  .search-fitness input {
+    color: #fff;
+    height: 40px;
+    background: transparent;
+  }
+
+  .detact-search input::placeholder, .search-fitness input::placeholder { 
+    color: #fff;
+    opacity: 1;
+  }
+  
+  .detact-search input:-ms-input-placeholder, .search-fitness input:-ms-input-placeholder { 
+    color: #fff;
+  }
+  
+  .detact-search input::-ms-input-placeholder, .search-fitness input::-ms-input-placeholder { 
+    color: #fff;
+  }
+
   .header .right-panel .rgt-side .col-md-2,
   .header .right-panel .rgt-side .col-md-3 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    max-width: 100%
+    max-width: 100%;
   }
 
   .header .right-panel .rgt-side .col-md-2.text-right {
@@ -2184,6 +2220,23 @@ span.multiselect-selected-text {
     overflow-wrap: break-word;
   }
 
+  .rgt-side h5 {
+    display: block;
+    margin: 10px 0 0 0;
+    text-align: center;
+  }
+
+  .search-fitness {
+    display: block;
+  }
+
+  .detact-search .fa,
+  .search-fitness .fa {
+    bottom: 8px;
+    top: auto;
+    color: #fff;
+  }
+
 }
 
 @media only screen and (max-width:575px) {
@@ -2197,7 +2250,21 @@ span.multiselect-selected-text {
   }
 
   .header .right-panel .rgt-side {
-    top: 24px;
+    top: 34px;
+    width: 100%;
+  }
+
+  .map-content .col-md-3 {
+    display: block;
+  }
+
+  .btm-fixed-category-slider {
+    position: absolute;
+    width: 100%;
+  }
+
+  .right-sidebar-panel {
+    height: auto;
   }
 
 }
