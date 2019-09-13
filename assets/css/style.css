@@ -2091,8 +2091,9 @@ span.multiselect-selected-text {
   margin: 3px;
 }
 
-
-
+.header .right-panel .rgt-side .close-btn {
+  display:none;
+}
 
 
 /*Ends Expand Side Panel*/
