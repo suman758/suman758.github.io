@@ -1802,8 +1802,9 @@ span.multiselect-selected-text {
   -o-border-radius: 3px;
   padding: 3px;
 }
-.header .right-panel .rgt-side .close-btn {
-  display:none;
+
+.right-panel .rgt-side .close-btn {
+  display: none;
 }
 
 .close-btn {
@@ -2097,6 +2098,7 @@ span.multiselect-selected-text {
 
 
 
+
 /*Ends Expand Side Panel*/
 
 /*Ends map-contant*/
@@ -2210,6 +2212,7 @@ span.multiselect-selected-text {
   .header .right-panel .rgt-side .close-btn {
     right: 10px;
     top: 5px;
+    display: block;
   }
 
   .header .right-panel .rgt-side .close-btn a {
@@ -2311,13 +2314,13 @@ span.multiselect-selected-text {
 
 }
 
-/* @media only screen and (max-width:480px) {
-  .header .right-panel .rgt-side {
+@media only screen and (max-width:480px) {
+  /* .header .right-panel .rgt-side {
     display: none;
-     background: #ffffff; 
+    background: #ffffff;
     width: 300px;
-  }
-} */
+  } */
+}
 
 
 @media only screen and (max-width:400px) {
