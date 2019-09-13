@@ -1085,8 +1085,7 @@ span.multiselect-selected-text {
 }
 
 .detact-search input:focus, .search-fitness input:focus {
-  background: transparent !important;
-  box-shadow: none !important;
+  color: #adadad;
 }
 
 .fitness-categories select {
@@ -1102,7 +1101,7 @@ span.multiselect-selected-text {
   -o-border-radius: 0;
   -moz-appearance: none;
   -webkit-appearance: none;
-  color: #ffffff;
+  color: #adadad;
   border: 0;
   background: transparent;
 }
@@ -1110,7 +1109,7 @@ span.multiselect-selected-text {
 .detact-search input:focus,
 .search-fitness input:focus,
 .fitness-categories select:focus {
-  color: #ffffff;
+  color: #adadad;
   background-color: #fff;
   border-color: #e4e4e4;
   outline: 0;
@@ -2279,6 +2278,18 @@ span.multiselect-selected-text {
     bottom: 8px;
     top: auto;
     color: #fff;
+  }
+
+  .detact-search input:focus, .search-fitness input:focus {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #ffffff;
+  }
+
+  .fitness-categories select:focus {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #ffffff;
   }
 
 }
