@@ -1006,14 +1006,20 @@ textarea {
   margin-top: 15px;
 }
 
-.search-fitness {
-  display: inline-block;
+.add-or {
+  position: relative;
 }
 
-.rgt-side h5 {
+/* .search-fitness {
   display: inline-block;
-  margin: 0 20px 0 0;
+} */
+
+.rgt-side h5 {
+  position: absolute;
   font-size: 18px;
+  top: 35px;
+  left: -6px;
+  color: #adadad;
 }
 
 .detact-search,
@@ -1024,7 +1030,7 @@ textarea {
 
 .fitness-categories {
   border-bottom: 1px solid #ced4da;
-  margin-top: 21px;
+  margin-top: 11px;
 }
 
 .fitness-categories .multiselect-container>li>a>label {
@@ -1041,7 +1047,7 @@ textarea {
   width: 100%;
   display: block;
   text-align: left;
-  border-bottom: 1px solid #ced4da;
+  /* border-bottom: 1px solid #ced4da; */
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1092,7 +1098,6 @@ span.multiselect-selected-text {
   -moz-appearance: none;
   -webkit-appearance: none;
   color: #adadad;
-  height: 28px !important;
   border: 0;
 }
 
@@ -1117,10 +1122,13 @@ span.multiselect-selected-text {
   top: 25px;
 }
 
-.detact-search .fa, .search-fitness .fa {
+.detact-search .fa,
+.search-fitness .fa {
   position: absolute;
   right: 17px;
   top: 25px;
+  color: #adadad;
+  font-size: 15px;
 }
 
 .fitness-categories img {
@@ -1170,6 +1178,15 @@ span.multiselect-selected-text {
   height: 30px;
   font-size: 12px;
   text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+.search-btn .btn:hover {
+  background: #8f8f8f;
 }
 
 .search-btn .btn .fa {
@@ -1239,6 +1256,7 @@ span.multiselect-selected-text {
 
 .right-sidebar-panel .card-body .image-box img {
   width: 100%;
+  height: 100%;
 }
 
 .searchber h2 {
@@ -2172,8 +2190,8 @@ span.multiselect-selected-text {
     position: absolute;
     right: 0;
     padding: 10px;
-    z-index: 999;
-    top: 50px;
+    z-index: 1;
+    top: 80px;
     -o-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
@@ -2187,16 +2205,19 @@ span.multiselect-selected-text {
     background: transparent;
   }
 
-  .detact-search input::placeholder, .search-fitness input::placeholder { 
+  .detact-search input::placeholder,
+  .search-fitness input::placeholder {
     color: #fff;
     opacity: 1;
   }
-  
-  .detact-search input:-ms-input-placeholder, .search-fitness input:-ms-input-placeholder { 
+
+  .detact-search input:-ms-input-placeholder,
+  .search-fitness input:-ms-input-placeholder {
     color: #fff;
   }
-  
-  .detact-search input::-ms-input-placeholder, .search-fitness input::-ms-input-placeholder { 
+
+  .detact-search input::-ms-input-placeholder,
+  .search-fitness input::-ms-input-placeholder {
     color: #fff;
   }
 
@@ -2250,8 +2271,9 @@ span.multiselect-selected-text {
   }
 
   .header .right-panel .rgt-side {
-    top: 34px;
+    top: 74px;
     width: 100%;
+    right: 50px;
   }
 
   .map-content .col-md-3 {
