@@ -1802,6 +1802,9 @@ span.multiselect-selected-text {
   -o-border-radius: 3px;
   padding: 3px;
 }
+.header .right-panel .rgt-side .close-btn {
+  display:none;
+}
 
 .close-btn {
   position: absolute;
@@ -2091,9 +2094,7 @@ span.multiselect-selected-text {
   margin: 3px;
 }
 
-.header .right-panel .rgt-side .close-btn {
-  display:none;
-}
+
 
 
 /*Ends Expand Side Panel*/
