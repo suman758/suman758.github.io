@@ -1084,6 +1084,11 @@ span.multiselect-selected-text {
   color: #adadad;
 }
 
+.detact-search input:focus, .search-fitness input:focus {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
 .fitness-categories select {
   position: relative;
   font-size: 14px;
@@ -1097,14 +1102,15 @@ span.multiselect-selected-text {
   -o-border-radius: 0;
   -moz-appearance: none;
   -webkit-appearance: none;
-  color: #adadad;
+  color: #ffffff;
   border: 0;
+  background: transparent;
 }
 
 .detact-search input:focus,
 .search-fitness input:focus,
 .fitness-categories select:focus {
-  color: #adadad;
+  color: #ffffff;
   background-color: #fff;
   border-color: #e4e4e4;
   outline: 0;
@@ -2173,10 +2179,11 @@ span.multiselect-selected-text {
   }
 
   .header .col-md-9 .fa-bars {
-    display: block;
+    display: table;
     font-size: 21px;
-    text-align: right;
+    /* text-align: right; */
     margin-top: 20px;
+    float: right;
   }
 
   .header .right-panel {
@@ -2197,6 +2204,17 @@ span.multiselect-selected-text {
     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     box-shadow: 0 0 5px rgba(0, 0, 0, .1);
   }
+
+  .header .right-panel .rgt-side .close-btn {
+    right: 10px;
+    top: 5px;
+  }
+
+  .header .right-panel .rgt-side .close-btn a {
+    color: #fff;
+    font-size: 18px;
+}
+
 
   .detact-search input,
   .search-fitness input {
@@ -2294,7 +2312,7 @@ span.multiselect-selected-text {
 @media only screen and (max-width:480px) {
   .header .right-panel .rgt-side {
     display: none;
-    background: #ffffff;
+    /* background: #ffffff; */
     width: 300px;
   }
 }

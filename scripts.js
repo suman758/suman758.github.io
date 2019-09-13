@@ -12058,9 +12058,9 @@ return jQuery;
 //Starts Menu
 
 $(document).ready(function () {
-  //   $(".header .col-md-9 .fa.fa-bars").click(function(){
-  //       $(".right-panel .rgt-side").slideToggle();
-  //   });
+    $(".header .col-md-9 .fa.fa-bars").click(function(){
+        $(".right-panel .rgt-side").slideToggle();
+    });
 
   
     // $(".fa.fa-bars").click(function () {
