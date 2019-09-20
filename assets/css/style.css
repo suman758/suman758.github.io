@@ -1067,6 +1067,40 @@ span.multiselect-selected-text {
   width: 100%;
 }
 
+.fitness-categories .multiselect-dropdown .dropdown-btn {
+  border: 0 none !important;
+  height: 38px;
+}
+
+.fitness-categories .multiselect-dropdown .dropdown-btn .dropdown-down {
+  top: 25px !important;
+  border-top: 6px solid #adadad !important;
+  border-left: 6px solid transparent !important;
+  border-right: 6px solid transparent !important;
+  position: absolute;
+  right: 8px !important;
+  position: absolute;
+}
+
+.fitness-categories .multiselect-dropdown .dropdown-btn .dropdown-up {
+  top: 25px !important;
+  border-bottom: 6px solid #adadad !important;
+  border-left: 6px solid transparent !important;
+  border-right: 6px solid transparent !important;
+  position: absolute;
+  right: 8px !important;
+  position: absolute;
+}
+
+.fitness-categories .multiselect-item-checkbox input[type=checkbox]+div:before {
+  color: #fab32c !important;
+  border: 2px solid #fab32c !important;
+}
+
+.fitness-categories .multiselect-item-checkbox input[type=checkbox]:checked+div:before {
+  background: #fab32c !important;
+}
+
 .detact-search input,
 .search-fitness input {
   position: relative;
@@ -1965,9 +1999,9 @@ span.multiselect-selected-text {
 }
 
 .section-listbox ul {
-  margin: 0 0 8px 0;
-  padding: 0;
   list-style-type: none;
+  margin: 0;
+  padding: 7px 0 0 0;
 }
 
 .section-listbox ul li {
@@ -2422,7 +2456,7 @@ span.multiselect-selected-text {
   .right-sidebar-panel .card .card-body .link-line .col-md-3 {
     padding-left: 10px !important;
   }
-  
+
 }
 
 @media only screen and (max-width:320px) {
