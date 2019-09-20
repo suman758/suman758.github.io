@@ -52,7 +52,7 @@ module.exports = "<p>footer works!</p>\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"header\">\r\n\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-3 col-sm-3 col-3\">\r\n        <div class=\"logo\">\r\n          <a href=\"#\">\r\n            <img src=\"./assets/images/logo.png\" alt=\"trainasyougo\">\r\n          </a>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-md-9 col-sm-9 col-9\" *ngIf=\"closestatus\">\r\n        <form #headForm=\"ngForm\" (ngSubmit)=\"onClickSubmit(headForm.value)\">\r\n          <!-- <i class=\"fa fa-bars\"></i> -->\r\n          <div class=\"right-panel\">\r\n            <div class=\"rgt-side\">\r\n              <div class=\"row\">\r\n                <div class=\"close-btn\">\r\n                  <a href=\"#\" (click)=\"close()\">\r\n                    <i class=\"fa fa-times\"></i>\r\n                  </a>\r\n                </div>\r\n                <div class=\"col-md-2\">\r\n                  <div class=\"detact-search\">\r\n                    <div class=\"form-group m-b-0\">\r\n                      <input type=\"text\" class=\"form-control\" name=\"location\" id=\"location\" aria-describedby=\"\"\r\n                        value=\"{{current_loc}}\" placeholder=\"Detect my location\" ngModel>\r\n                      <input type=\"hidden\" #nameInput name=\"distance\" id=\"distance\" value=\"20km\">\r\n                      <i class=\"fa fa-dot-circle-o\" aria-hidden=\"true\"></i>\r\n                      <!-- <img src=\"./assets/images/detact-icon.png\" alt=\"trainasyougo\" (click)=\"getLocation()\"> -->\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-2\">\r\n                  <div class=\"distance-box\">\r\n                    <form>\r\n                      <div class=\"form-group m-b-0\">\r\n                        <label for=\"formControlRange\">Distance</label>\r\n                        <input type=\"text\" name=\"time_range\" id=\"time_range\" class=\"form-control slider\" value=\"5km\">\r\n\r\n                      </div>\r\n                    </form>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-3\">\r\n                  <div class=\"fitness-categories\">\r\n                    <!-- <select class=\"custom-select\" id=\"basic\" multiple=\"multiple\" *ngIf=\"outputs.length>0\">\r\n                      <option *ngFor=\"let out of outputs\" value=\"{{out._id}}\">{{out.name}}</option>\r\n                    </select> -->\r\n                    <ng-multiselect-dropdown-angular7 [placeholder]=\"'Fitness Categories'\" [data]=\"dropdownList\"\r\n                       [settings]=\"dropdownSettings\" (onSelect)=\"onItemSelect($event)\"\r\n                      (onSelectAll)=\"onSelectAll($event)\" (onDeSelect)=\"onDeSelect($event)\">\r\n                    </ng-multiselect-dropdown-angular7>\r\n                    <!-- <select *ngIf=\"outputs.length>0\" class=\"form-control\" placeholder=\"Fitness Categories\"\r\n                      name=\"fit_cat\" id=\"exampleFormControlSelect1\" multiple=\"multiple\" ngModel>\r\n                      <option selected>Fitness Categories</option>\r\n                      <option *ngFor=\"let out of outputs\" [value]=\"out._id\">{{out.name}}</option>\r\n\r\n                    </select> -->\r\n                    <img src=\"./assets/images/fitness-category.png\" alt=\"trainasyougo\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-3 add-or\">\r\n                  <h5>or</h5>\r\n                  <div class=\"search-fitness\">\r\n                    <input ngx-google-places-autocomplete class=\"form-control\" [options]='options'\r\n                      #placesRef=\"ngx-places\" (onAddressChange)=\"handleAddressChange($event)\"\r\n                      placeholder=\"Search location\" />\r\n                    <!-- <input type=\"text\" class=\"form-control\" id=\"\" name=\"searchfitservices\" aria-describedby=\"\" placeholder=\"Search location\" ngModel> -->\r\n                    <!-- <img src=\"./assets/images/location-icons.png\" alt=\"trainasyougo\"> -->\r\n                    <i class=\"fa fa-map-marker\"></i>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-2 text-right\">\r\n                  <div class=\"search-btn\">\r\n                    <button type=\"submit\" class=\"btn btn-primary\"><i class=\"fa fa-search\"></i>Search</button>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </form>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n"
+module.exports = "<div class=\"header\">\r\n\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-3 col-sm-3 col-3\">\r\n        <div class=\"logo\">\r\n          <a href=\"#\">\r\n            <img src=\"./assets/images/logo.png\" alt=\"trainasyougo\">\r\n          </a>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-md-9 col-sm-9 col-9\" *ngIf=\"closestatus\">\r\n        <form #headForm=\"ngForm\" (ngSubmit)=\"onClickSubmit(headForm.value)\">\r\n          <!-- <i class=\"fa fa-bars\"></i> -->\r\n          <div class=\"right-panel\">\r\n            <div class=\"rgt-side\">\r\n              <div class=\"row\">\r\n                <div class=\"close-btn\">\r\n                  <a href=\"#\" (click)=\"close()\">\r\n                    <i class=\"fa fa-times\"></i>\r\n                  </a>\r\n                </div>\r\n                <div class=\"col-md-2\">\r\n                  <div class=\"detact-search\">\r\n                    <div class=\"form-group m-b-0\">\r\n                      <input type=\"text\" class=\"form-control\" name=\"location\" id=\"location\" aria-describedby=\"\"\r\n                        value=\"{{current_loc}}\" placeholder=\"Detect my location\" ngModel>\r\n                      <input type=\"hidden\" #nameInput name=\"distance\" id=\"distance\" value=\"20km\">\r\n                      <i class=\"fa fa-dot-circle-o\" aria-hidden=\"true\" (click)=\"currentloc()\"></i>\r\n                      <!-- <img src=\"./assets/images/detact-icon.png\" alt=\"trainasyougo\" (click)=\"getLocation()\"> -->\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-2\">\r\n                  <div class=\"distance-box\">\r\n                    <form>\r\n                      <div class=\"form-group m-b-0\">\r\n                        <label for=\"formControlRange\">Distance</label>\r\n                        <input type=\"text\" name=\"time_range\" id=\"time_range\" class=\"form-control slider\" value=\"5km\">\r\n\r\n                      </div>\r\n                    </form>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-3\">\r\n                  <div class=\"fitness-categories\">\r\n                    <!-- <select class=\"custom-select\" id=\"basic\" multiple=\"multiple\" *ngIf=\"outputs.length>0\">\r\n                      <option *ngFor=\"let out of outputs\" value=\"{{out._id}}\">{{out.name}}</option>\r\n                    </select> -->\r\n                    <ng-multiselect-dropdown-angular7 [placeholder]=\"'Fitness Categories'\" [data]=\"dropdownList\"\r\n                       [settings]=\"dropdownSettings\" (onSelect)=\"onItemSelect($event)\"\r\n                      (onSelectAll)=\"onSelectAll($event)\" (onDeSelect)=\"onDeSelect($event)\">\r\n                    </ng-multiselect-dropdown-angular7>\r\n                    <!-- <select *ngIf=\"outputs.length>0\" class=\"form-control\" placeholder=\"Fitness Categories\"\r\n                      name=\"fit_cat\" id=\"exampleFormControlSelect1\" multiple=\"multiple\" ngModel>\r\n                      <option selected>Fitness Categories</option>\r\n                      <option *ngFor=\"let out of outputs\" [value]=\"out._id\">{{out.name}}</option>\r\n\r\n                    </select> -->\r\n                    <img src=\"./assets/images/fitness-category.png\" alt=\"trainasyougo\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-3 add-or\">\r\n                  <h5>or</h5>\r\n                  <div class=\"search-fitness\">\r\n                    <input ngx-google-places-autocomplete class=\"form-control\" [options]='options'\r\n                      #placesRef=\"ngx-places\" (onAddressChange)=\"handleAddressChange($event)\"\r\n                      placeholder=\"Search location\" />\r\n                    <!-- <input type=\"text\" class=\"form-control\" id=\"\" name=\"searchfitservices\" aria-describedby=\"\" placeholder=\"Search location\" ngModel> -->\r\n                    <!-- <img src=\"./assets/images/location-icons.png\" alt=\"trainasyougo\"> -->\r\n                    <i class=\"fa fa-map-marker\"></i>\r\n                  </div>\r\n                </div>\r\n                <div class=\"col-md-2 text-right\">\r\n                  <div class=\"search-btn\">\r\n                    <button type=\"submit\" class=\"btn btn-primary\"><i class=\"fa fa-search\"></i>Search</button>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </form>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -387,13 +387,16 @@ var HeaderComponent = /** @class */ (function () {
         console.log(this.selectedItems.sort());
         this.httpclient.post(this.serverUrl + 'placerecords', { distance: data.distance, lat: this.lat, lng: this.lng, cat: this.selectedItems.sort(), place_id: this.place_id }).subscribe(function (datas) {
             _this.loaderService.display(false);
-            _this.closestatus = false;
+            //this.closestatus = false;
             console.log(datas);
             _this.result = datas;
             _this.data.changeMessage(datas);
         }, function (error) {
             console.log("Rrror", error);
         });
+    };
+    HeaderComponent.prototype.currentloc = function () {
+        window.location.reload();
     };
     HeaderComponent.prototype.getLocation = function () {
         var _this = this;
@@ -412,8 +415,13 @@ var HeaderComponent = /** @class */ (function () {
         }
     };
     HeaderComponent.prototype.handleAddressChange = function (e) {
-        console.log(e);
+        console.log(e.geometry.location.lat());
+        var loc = {
+            'lat': e.geometry.location.lat(),
+            'lng': e.geometry.location.lng()
+        };
         this.place_id = e.name;
+        this.data.changelatlng(loc);
     };
     HeaderComponent.prototype.onItemSelect = function (event) {
         console.log(event);
@@ -503,14 +511,19 @@ var DataService = /** @class */ (function () {
     function DataService() {
         this.messageSource = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"]('');
         this.messageSources = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"]('');
+        this.messageSourcess = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"]('');
         this.currentMessage = this.messageSource.asObservable();
         this.currentMessages = this.messageSources.asObservable();
+        this.currentMessagess = this.messageSourcess.asObservable();
     }
     DataService.prototype.changeMessage = function (message) {
         this.messageSource.next(message);
     };
     DataService.prototype.changehead = function (msg) {
         this.messageSources.next(msg);
+    };
+    DataService.prototype.changelatlng = function (msg) {
+        this.messageSourcess.next(msg);
     };
     DataService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
@@ -676,6 +689,10 @@ var HomeComponent = /** @class */ (function () {
                 }
                 //});
             }
+        });
+        this.data.currentMessagess.subscribe(function (message) {
+            _this.lat = message['lat'];
+            _this.lng = message['lng'];
         });
     };
     HomeComponent.prototype.google_map_directions = function (mylat, mylon) {
