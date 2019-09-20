@@ -1084,7 +1084,8 @@ span.multiselect-selected-text {
   color: #adadad;
 }
 
-.detact-search input:focus, .search-fitness input:focus {
+.detact-search input:focus,
+.search-fitness input:focus {
   color: #adadad;
 }
 
@@ -1324,13 +1325,49 @@ span.multiselect-selected-text {
 }
 
 .link-line ul li {
-  /*display: inline-block;
-	margin-right: 4px;*/
+  width: 30%;
+  display: inline-block;
+  margin-left: 5px;
 }
 
 .right-sidebar-panel .card .card-body .link-line .col-md-3 {
-  padding-left: 0;
-  padding-right: 5px;
+  padding-left: 15px !important;
+}
+
+
+.link-line button {
+
+  background: #fab32c;
+  padding: 5px;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  text-decoration: none;
+  font-size: 12px;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  height: 52px;
+  outline: none;
+  border: 0 none;
+}
+
+.link-line button:hover {
+  background: #8f8f8f;
+}
+
+.link-line button .fa {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 3px;
 }
 
 .link-line ul li a {
@@ -2217,7 +2254,7 @@ span.multiselect-selected-text {
   .header .right-panel .rgt-side .close-btn a {
     color: #fff;
     font-size: 18px;
-}
+  }
 
 
   .detact-search input,
@@ -2280,7 +2317,8 @@ span.multiselect-selected-text {
     color: #fff;
   }
 
-  .detact-search input:focus, .search-fitness input:focus {
+  .detact-search input:focus,
+  .search-fitness input:focus {
     background: transparent !important;
     box-shadow: none !important;
     color: #ffffff;
@@ -2321,6 +2359,12 @@ span.multiselect-selected-text {
 
   .right-sidebar-panel {
     height: auto;
+  }
+
+  .right-sidebar-panel .card .card-body .link-line .col-md-9 {
+    -webkit-box-flex: 0;
+    flex: 0 0 75%;
+    max-width: 75%;
   }
 
 }
@@ -2373,6 +2417,11 @@ span.multiselect-selected-text {
   .section-listbox ul li {
     margin-right: 10px;
   }
+
+  .right-sidebar-panel .card .card-body .link-line .col-md-3 {
+    padding-left: 10px !important;
+  }
+  
 }
 
 @media only screen and (max-width:320px) {
