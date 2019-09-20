@@ -808,7 +808,7 @@ var HomeComponent = /** @class */ (function () {
     };
     HomeComponent.prototype.fetchloc = function () {
         var _this = this;
-        this.httpclient.get('http://ipinfo.io/json?').subscribe(function (data) {
+        this.httpclient.get('https://ipinfo.io/json').subscribe(function (data) {
             _this.loaderService.display(false);
             console.log(data);
             //this.output = data;

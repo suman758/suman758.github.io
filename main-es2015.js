@@ -788,7 +788,7 @@ let HomeComponent = class HomeComponent {
         }
     }
     fetchloc() {
-        this.httpclient.get('http://ipinfo.io/json?').subscribe(data => {
+        this.httpclient.get('https://ipinfo.io/json').subscribe(data => {
             this.loaderService.display(false);
             console.log(data);
             //this.output = data;
