@@ -730,6 +730,7 @@ let HomeComponent = class HomeComponent {
         this.previous = infowindow;
     }
     getLocation() {
+        this.fetchloc();
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
                 if (position) {
@@ -780,11 +781,21 @@ let HomeComponent = class HomeComponent {
                 }, error => {
                     console.log("Rrror", error);
                 });
-            }, { maximumAge: 0, timeout: 5000, enableHighAccuracy: true });
+            }, { maximumAge: 0, timeout: 60000, enableHighAccuracy: true });
         }
         else {
             alert("Geolocation is not supported by this browser.");
         }
+    }
+    fetchloc() {
+        this.httpclient.get('http://ipinfo.io/json?').subscribe(data => {
+            this.loaderService.display(false);
+            console.log(data);
+            //this.output = data;
+        }, error => {
+            console.log("Rrror", error);
+        });
+        ;
     }
     placeDetails(list) {
         this.detstatus = true;

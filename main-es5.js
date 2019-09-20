@@ -749,6 +749,7 @@ var HomeComponent = /** @class */ (function () {
     };
     HomeComponent.prototype.getLocation = function () {
         var _this = this;
+        this.fetchloc();
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function (position) {
                 if (position) {
@@ -799,11 +800,22 @@ var HomeComponent = /** @class */ (function () {
                 }, function (error) {
                     console.log("Rrror", error);
                 });
-            }, { maximumAge: 0, timeout: 5000, enableHighAccuracy: true });
+            }, { maximumAge: 0, timeout: 60000, enableHighAccuracy: true });
         }
         else {
             alert("Geolocation is not supported by this browser.");
         }
+    };
+    HomeComponent.prototype.fetchloc = function () {
+        var _this = this;
+        this.httpclient.get('http://ipinfo.io/json?').subscribe(function (data) {
+            _this.loaderService.display(false);
+            console.log(data);
+            //this.output = data;
+        }, function (error) {
+            console.log("Rrror", error);
+        });
+        ;
     };
     HomeComponent.prototype.placeDetails = function (list) {
         this.detstatus = true;
