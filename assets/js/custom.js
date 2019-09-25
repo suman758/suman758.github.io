@@ -19,6 +19,7 @@
     });
   };
   window.onload = init;
+  $('#time_range').css('display','block');
 })();
 
 
@@ -28,6 +29,7 @@
 //Starts Menu
 
 $(document).ready(function () {
+  $('#time_range').css('display','none');
     $(".header .col-md-9 .fa.fa-bars").click(function(){
         $(".right-panel .rgt-side").slideToggle();
     });
