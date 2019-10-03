@@ -988,8 +988,8 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 var environment = {
     production: false,
-    baseUrl: 'http://localhost:3000/'
-    //baseUrl:'https://aqueous-river-43130.herokuapp.com/'
+    //baseUrl:'http://localhost:3000/'
+    baseUrl: 'https://aqueous-river-43130.herokuapp.com/'
     //baseUrl:' http://localhost:3000/'
 };
 /*
