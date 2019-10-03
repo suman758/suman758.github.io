@@ -1092,12 +1092,12 @@ span.multiselect-selected-text {
   position: absolute;
 }
 
-.fitness-categories .multiselect-item-checkbox input[type=checkbox]+div:before {
-  color: #fab32c !important;
-  border: 2px solid #fab32c !important;
+.fitness-categories .multiselect-item-checkbox input[type=checkbox] + div:before {
+    color: #fab32c !important;
+    border: 2px solid #fab32c !important;
 }
 
-.fitness-categories .multiselect-item-checkbox input[type=checkbox]:checked+div:before {
+.fitness-categories .multiselect-item-checkbox input[type=checkbox]:checked + div:before {
   background: #fab32c !important;
 }
 
