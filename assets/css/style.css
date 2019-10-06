@@ -1092,12 +1092,12 @@ span.multiselect-selected-text {
   position: absolute;
 }
 
-.fitness-categories .multiselect-item-checkbox input[type=checkbox] + div:before {
-    color: #fab32c !important;
-    border: 2px solid #fab32c !important;
+.fitness-categories .multiselect-item-checkbox input[type=checkbox]+div:before {
+  color: #fab32c !important;
+  border: 2px solid #fab32c !important;
 }
 
-.fitness-categories .multiselect-item-checkbox input[type=checkbox]:checked + div:before {
+.fitness-categories .multiselect-item-checkbox input[type=checkbox]:checked+div:before {
   background: #fab32c !important;
 }
 
@@ -1116,6 +1116,7 @@ span.multiselect-selected-text {
   -moz-appearance: none;
   -webkit-appearance: none;
   color: #adadad;
+  background-color: transparent !important;
 }
 
 .detact-search input:focus,
@@ -2174,6 +2175,18 @@ span.multiselect-selected-text {
 
 /*Ends map-contant*/
 
+/* Starts new css 10-03-2019 */
+
+.popup-msg {
+  padding: 0 14px;
+  margin-top: 20px;
+}
+
+button.btn.btn-primary.msg-btn {
+  padding: 0 !important;
+  height: 32px;
+}
+
 
 
 
@@ -2400,6 +2413,33 @@ span.multiselect-selected-text {
     -webkit-box-flex: 0;
     flex: 0 0 75%;
     max-width: 75%;
+  }
+
+  .item .slider h3 {
+    font-size: 14px !important;
+    padding-bottom: 5px !important;
+  }
+
+  .btm-fixed-category-slider .owl-carousel .item .slider img {
+    width: 60px;
+  }
+
+  .btm-fixed-category-slider .owl-carousel .owl-prev {
+    top: -80px !important;
+  }
+
+  .btm-fixed-category-slider .owl-carousel .owl-next {
+    top: -80px !important;
+  }
+
+  .btm-fixed-category-slider .owl-carousel .item {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 100px;
+    height: 100px;
   }
 
 }
