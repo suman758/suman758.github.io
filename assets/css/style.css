@@ -1427,6 +1427,10 @@ span.multiselect-selected-text {
   height: 52px;
 }
 
+.link-line ul li a:active {
+  background: #8f8f8f;
+}
+
 .link-line ul li a:hover {
   background: #8f8f8f;
 }
@@ -2177,6 +2181,15 @@ span.multiselect-selected-text {
 
 /* Starts new css 10-03-2019 */
 
+.link-line .col-md-9.col-sm-9.col-9 {
+  padding-right: 0;
+  padding-left: 15px;
+}
+
+.popup-msg .col-md-8 {
+  padding-right: 0;
+}
+
 .popup-msg {
   padding: 0 14px;
   margin-top: 20px;
@@ -2184,11 +2197,52 @@ span.multiselect-selected-text {
 
 button.btn.btn-primary.msg-btn {
   padding: 0 !important;
-  height: 32px;
+  height: 37px;
+  font-size: 14px;
 }
 
+.profile-menu {
+  display: inline-block;
+  margin-left: 18px;
+}
 
+.profile-menu a:hover {
+  color: #fab32c;
+}
 
+.profile-menu .dropdown-item.active,
+.dropdown-item:active {
+  color: #fff !important;
+  background-color: #fab32c;
+}
+
+.profile-menu .dropdown-item {
+  padding: 4px 10px;
+}
+
+.profile-menu a .fa {
+  margin-right: 8px;
+}
+
+.rgt-side>.profile-menu {
+  display: none !important;
+}
+
+.profile-menu a {
+  font-size: 16px;
+}
+
+.like-share .fa-thumbs-o-up {
+  background: #fab32c;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 17px;
+  margin-right: 5px;
+  color: #fff;
+}
 
 
 /*starts on responsive css*/
@@ -2378,6 +2432,20 @@ button.btn.btn-primary.msg-btn {
     color: #ffffff;
   }
 
+  .profile-menu {
+    position: absolute;
+    top: -67px;
+    right: 0;
+  }
+
+  .rgt-side>.profile-menu {
+    display: block !important;
+  }
+
+  .search-btn>button+.profile-menu {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width:575px) {
@@ -2440,6 +2508,32 @@ button.btn.btn-primary.msg-btn {
     -o-border-radius: 50%;
     width: 100px;
     height: 100px;
+  }
+
+  .profile-menu {
+    position: absolute;
+    top: -67px;
+    right: -40px;
+  }
+
+  .btm-fixed-category-slider .owl-carousel .item .slider.active {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  .btm-fixed-category-slider .owl-carousel .item .slider:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  .btm-fixed-category-slider .owl-carousel .item .slider {
+    padding: 4px;
   }
 
 }
