@@ -1366,7 +1366,7 @@ span.multiselect-selected-text {
 }
 
 .right-sidebar-panel .card .card-body .link-line .col-md-3 {
-  padding-left: 15px !important;
+  padding-left: 0 !important;
 }
 
 
@@ -2234,14 +2234,37 @@ button.btn.btn-primary.msg-btn {
 
 .like-share .fa-thumbs-o-up {
   background: #fab32c;
-  font-size: 20px;
-  padding: 10px;
+  font-size: 15px;
+  padding: 0;
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   line-height: 17px;
   margin-right: 5px;
   color: #fff;
+  text-align: center;
+  line-height: 25px;
+}
+
+.like-share p {
+  font-size: 14px;
+}
+
+.like-share {
+  padding: 5px 0px 0 10px;
+}
+
+
+.popup-msg .form-control {
+  border-radius: 0;
+  border-bottom: 1px solid #ced4da;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+.star.half:after {
+  display: none !important;
 }
 
 
@@ -2335,7 +2358,7 @@ button.btn.btn-primary.msg-btn {
   .header .right-panel .rgt-side {
     display: block;
     background: rgba(0, 0, 0, 0.7);
-    width: 80%;
+    width: auto;
     position: absolute;
     right: 0;
     padding: 10px;
@@ -2444,6 +2467,23 @@ button.btn.btn-primary.msg-btn {
 
   .search-btn>button+.profile-menu {
     display: none;
+  }
+
+  .star.half:after {
+    display: none !important;
+  }
+
+  .rgt-side .btn.btn-primary {
+    background-color: #00b7d6;
+    border-color: #00b7d6;
+    display: table;
+    margin: 0 auto;
+    padding: 6px;
+  }
+
+  .rgt-side img {
+    width: 15px;
+    margin-right: 5px;
   }
 
 }
