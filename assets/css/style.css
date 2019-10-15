@@ -1031,6 +1031,7 @@ textarea {
 .fitness-categories {
   border-bottom: 1px solid #ced4da;
   margin-top: 11px;
+  color: #adadad;
 }
 
 .fitness-categories .multiselect-container>li>a>label {
@@ -2316,6 +2317,10 @@ button.btn.btn-primary.msg-btn {
     color: #000000;
   }
 
+  .fitness-categories {
+    color: #fff;
+  }
+
   .distance-box label {
     color: #ffffff;
     margin: 0 0 0 12px;
@@ -2620,7 +2625,7 @@ button.btn.btn-primary.msg-btn {
   }
 
   .btm-fixed-category-slider .owl-carousel .item {
-    margin: 5px 5px;
+    margin: 5px -1px;
   }
 
   .section-listbox ul li {
@@ -2631,12 +2636,53 @@ button.btn.btn-primary.msg-btn {
     padding-left: 10px !important;
   }
 
+  .btm-fixed-category-slider .owl-carousel .item {
+    width: 90px;
+    height: 90px;
+  }
+
+  .item .slider h3 {
+    font-size: 12px !important;
+  }
+
+  .btm-fixed-category-slider .owl-carousel .item .slider {
+    padding: 5px;
+    margin: 0;
+  }
+
 }
+
 
 @media only screen and (max-width:320px) {
   #collapse-expand {
     width: 320px;
   }
+
+  .btm-fixed-category-slider .owl-carousel .item {
+    width: 80px;
+    height: 80px;
+  }
+
+  .btm-fixed-category-slider .owl-carousel .item .slider img {
+    width: 50px;
+  }
+
+  .btm-fixed-category-slider .owl-carousel .item {
+    margin: 5px 8px;
+  }
+
+  .owl-carousel.owl-drag .owl-item {
+    margin-right: 9px !important;
+  }
+
+  .btm-fixed-category-slider .owl-carousel .owl-prev {
+    top: -65px !important;
+  }
+
+  .btm-fixed-category-slider .owl-carousel .owl-next {
+    top: -65px !important;
+  }
+
 }
 
 /*ends on responsive css*/
