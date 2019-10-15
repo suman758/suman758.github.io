@@ -754,7 +754,7 @@ var HomeComponent = /** @class */ (function () {
             loop: true,
             autoplay: true,
             mouseDrag: true,
-            touchDrag: false,
+            touchDrag: true,
             pullDrag: false,
             margin: 10,
             autoWidth: true,

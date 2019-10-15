@@ -738,7 +738,7 @@ let HomeComponent = class HomeComponent {
             loop: true,
             autoplay: true,
             mouseDrag: true,
-            touchDrag: false,
+            touchDrag: true,
             pullDrag: false,
             margin: 10,
             autoWidth: true,
