@@ -52,7 +52,7 @@ module.exports = "<p>footer works!</p>\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"header\">\r\n\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-2 col-sm-2 col-2\">\r\n        <div class=\"logo\">\r\n          <a href=\"#\">\r\n            <img src=\"./assets/images/logo.png\" alt=\"trainasyougo\">\r\n          </a>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-md-10 col-sm-10 col-10\" [ngClass]=\"(closestatus!=false)?'active':'inactive'\">\r\n        <!-- <form #headForm=\"ngForm\" (ngSubmit)=\"onClickSubmit(headForm.value)\"> -->\r\n        <!-- <i class=\"fa fa-bars\"></i> -->\r\n        <div class=\"right-panel\">\r\n          <div class=\"rgt-side\">\r\n            <ul class=\"nav navbar-nav profile-menu\" *ngIf=\"user_det!=null\">\r\n              <li class=\"nav-item dropdown\">\r\n                <a href=\"#\" class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\">Guest User</a>\r\n                <div class=\"dropdown-menu dropdown-menu-right\">\r\n                  <!-- <a href=\"#\" class=\"dropdown-item\"><i class=\"fa fa-user\"></i>Profile</a> -->\r\n                  <!-- <a href=\"#\" class=\"dropdown-item\"><i class=\"fa fa-cog\"></i>Settings</a> -->\r\n                  <div class=\"dropdown-divider\"></div>\r\n                  <a href=\"#\" (click)=\"logout()\" class=\"dropdown-item\"><i class=\"fa fa-sign-out\"></i>Logout</a>\r\n                </div>\r\n              </li>\r\n            </ul>\r\n            <div class=\"row\">\r\n              <div class=\"close-btn\">\r\n                <a href=\"#\" (click)=\"close()\">\r\n                  <i class=\"fa fa-times\"></i>\r\n                </a>\r\n              </div>\r\n              <div class=\"col-md-2\">\r\n                <div class=\"detact-search\">\r\n                  <div class=\"form-group m-b-0\">\r\n                    <input type=\"text\" class=\"form-control\" name=\"location\" id=\"location\" aria-describedby=\"\"\r\n                      value=\"{{current_loc}}\" placeholder=\"Detect my location\" ngModel readonly>\r\n                    <input type=\"hidden\" #nameInput name=\"distance\" id=\"distance\" value=\"20km\">\r\n                    <i class=\"fa fa-dot-circle-o\" aria-hidden=\"true\" (click)=\"currentloc()\"></i>\r\n                    <!-- <img src=\"./assets/images/detact-icon.png\" alt=\"trainasyougo\" (click)=\"getLocation()\"> -->\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"col-md-2\">\r\n                <div class=\"distance-box\">\r\n                  <form>\r\n                    <div class=\"form-group m-b-0\">\r\n                      <label for=\"formControlRange\">Distance</label>\r\n                      <input type=\"text\" name=\"time_range\" id=\"time_range\" class=\"form-control slider\" value=\"5km\">\r\n\r\n                    </div>\r\n                  </form>\r\n                </div>\r\n              </div>\r\n              <div class=\"col-md-3\">\r\n                <div class=\"fitness-categories\">\r\n                  <!-- <select class=\"custom-select\" id=\"basic\" multiple=\"multiple\" *ngIf=\"outputs.length>0\">\r\n                      <option *ngFor=\"let out of outputs\" value=\"{{out._id}}\">{{out.name}}</option>\r\n                    </select> -->\r\n\r\n                  <!-- <ul>\r\n                      <li *ngFor=\"let p of selItems\">{{p.name}}</li>\r\n                    </ul> -->\r\n                  <ng-multiselect-dropdown-angular7 [placeholder]=\"'Fitness Categories'\" [data]=\"dropdownList\"\r\n                    [settings]=\"dropdownSettings\" (onSelect)=\"onItemSelect($event)\" [(ngModel)]=\"selItems\"\r\n                    (onSelectAll)=\"onSelectAll($event)\" (onDeSelect)=\"onDeSelect($event)\">\r\n                  </ng-multiselect-dropdown-angular7>\r\n                  <!-- <select *ngIf=\"outputs.length>0\" class=\"form-control\" placeholder=\"Fitness Categories\"\r\n                      name=\"fit_cat\" id=\"exampleFormControlSelect1\" multiple=\"multiple\" ngModel>\r\n                      <option selected>Fitness Categories</option>\r\n                      <option *ngFor=\"let out of outputs\" [value]=\"out._id\">{{out.name}}</option>\r\n\r\n                    </select> -->\r\n                  <img src=\"./assets/images/fitness-category.png\" alt=\"trainasyougo\">\r\n                </div>\r\n              </div>\r\n              <div class=\"col-md-2 add-or\">\r\n                <!-- <h5>or</h5> -->\r\n                <div class=\"search-fitness\">\r\n                  <input ngx-google-places-autocomplete class=\"form-control\" [options]='options' #placesRef=\"ngx-places\"\r\n                    (onAddressChange)=\"handleAddressChange($event)\" placeholder=\"Search location\" />\r\n                  <!-- <input type=\"text\" class=\"form-control\" id=\"\" name=\"searchfitservices\" aria-describedby=\"\" placeholder=\"Search location\" ngModel> -->\r\n                  <!-- <img src=\"./assets/images/location-icons.png\" alt=\"trainasyougo\"> -->\r\n                  <i class=\"fa fa-map-marker\"></i>\r\n                </div>\r\n              </div>\r\n              <div class=\"col-md-3 text-right\">\r\n                <div class=\"search-btn\">\r\n                  <button type=\"button\" class=\"btn btn-primary\" (click)=\"onClickSubmit()\">\r\n                    <i class=\"fa fa-search\"></i>Search\r\n                  </button>\r\n                  <ul class=\"nav navbar-nav profile-menu\" *ngIf=\"user_det!=null\">\r\n                    <li class=\"nav-item dropdown\">\r\n                      <a href=\"#\" class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\">Guest User</a>\r\n                      <div class=\"dropdown-menu dropdown-menu-right\">\r\n                        <!-- <a href=\"#\" class=\"dropdown-item\"><i class=\"fa fa-user\"></i>Profile</a> -->\r\n                        <!-- <a href=\"#\" class=\"dropdown-item\"><i class=\"fa fa-cog\"></i>Settings</a> -->\r\n                        <div class=\"dropdown-divider\"></div>\r\n                        <a href=\"#\" (click)=\"logout()\" class=\"dropdown-item\"><i class=\"fa fa-sign-out\"></i>Logout</a>\r\n                      </div>\r\n                    </li>\r\n                  </ul>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <!-- </form> -->\r\n      </div>\r\n      <div class=\"col-md-10 col-sm-10 col-10\" [ngClass]=\"(closestatus != true)?'active':'inactive'\">\r\n        <div class=\"right-panel\">\r\n          <div class=\"rgt-side\">\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"open_search_bar()\"><img src=\"./assets/images/open-icon.png\" alt=\"trainasugo\">Open Search Area</button>\r\n            <input type=\"hidden\" #nameInput name=\"distance\" id=\"distance\" value=\"20km\">\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n"
+module.exports = "<div class=\"header\">\r\n\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-2 col-sm-2 col-2\">\r\n        <div class=\"logo\">\r\n          <a href=\"#\">\r\n            <img src=\"./assets/images/logo.png\" alt=\"trainasyougo\">\r\n          </a>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-md-10 col-sm-10 col-10\" [ngClass]=\"(closestatus!=false)?'active':'inactive'\">\r\n        <!-- <form #headForm=\"ngForm\" (ngSubmit)=\"onClickSubmit(headForm.value)\"> -->\r\n        <!-- <i class=\"fa fa-bars\"></i> -->\r\n        <div class=\"right-panel\">\r\n          <div class=\"rgt-side\">\r\n            <ul class=\"nav navbar-nav profile-menu\" *ngIf=\"user_det!=null\">\r\n              <li class=\"nav-item dropdown\">\r\n                <a href=\"#\" class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\">Guest User</a>\r\n                <div class=\"dropdown-menu dropdown-menu-right\">\r\n                  <!-- <a href=\"#\" class=\"dropdown-item\"><i class=\"fa fa-user\"></i>Profile</a> -->\r\n                  <!-- <a href=\"#\" class=\"dropdown-item\"><i class=\"fa fa-cog\"></i>Settings</a> -->\r\n                  <div class=\"dropdown-divider\"></div>\r\n                  <a href=\"#\" (click)=\"logout()\" class=\"dropdown-item\"><i class=\"fa fa-sign-out\"></i>Logout</a>\r\n                </div>\r\n              </li>\r\n            </ul>\r\n            <div class=\"row\">\r\n              <div class=\"close-btn\">\r\n                <a href=\"#\" (click)=\"close()\">\r\n                  <i class=\"fa fa-times\"></i>\r\n                </a>\r\n              </div>\r\n              <div class=\"col-md-2\">\r\n                <div class=\"detact-search\">\r\n                  <div class=\"form-group m-b-0\">\r\n                    <input type=\"text\" class=\"form-control\" name=\"location\" id=\"location\" aria-describedby=\"\"\r\n                      value=\"{{current_loc}}\" placeholder=\"Detect my location\" ngModel readonly>\r\n                    <!-- <input type=\"hidden\" #nameInput name=\"distance\" id=\"distance\" value=\"5km\"> -->\r\n                    <i class=\"fa fa-dot-circle-o\" aria-hidden=\"true\" (click)=\"currentloc()\"></i>\r\n                    <!-- <img src=\"./assets/images/detact-icon.png\" alt=\"trainasyougo\" (click)=\"getLocation()\"> -->\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"col-md-2\">\r\n                <div class=\"distance-box\">\r\n                  <form>\r\n                    <div class=\"form-group m-b-0 m-t-10\">\r\n                      <!-- <label for=\"formControlRange\">Distance</label> -->\r\n                      <!-- <input type=\"text\" name=\"time_range\" id=\"time_range1\" class=\"form-control slider\" value=\"5km\"> -->\r\n                      <ng5-slider [(value)]=\"value\" #nameInput  [options]=\"options\"></ng5-slider>\r\n                    </div>\r\n                  </form>\r\n                </div>\r\n              </div>\r\n              <div class=\"col-md-3\">\r\n                <div class=\"fitness-categories\">\r\n                  <!-- <select class=\"custom-select\" id=\"basic\" multiple=\"multiple\" *ngIf=\"outputs.length>0\">\r\n                      <option *ngFor=\"let out of outputs\" value=\"{{out._id}}\">{{out.name}}</option>\r\n                    </select> -->\r\n\r\n                  <!-- <ul>\r\n                      <li *ngFor=\"let p of selItems\">{{p.name}}</li>\r\n                    </ul> -->\r\n                  <ng-multiselect-dropdown-angular7 [placeholder]=\"'Fitness Categories'\" [data]=\"dropdownList\"\r\n                    [settings]=\"dropdownSettings\" (onSelect)=\"onItemSelect($event)\" [(ngModel)]=\"selItems\"\r\n                    (onSelectAll)=\"onSelectAll($event)\" (onDeSelect)=\"onDeSelect($event)\">\r\n                  </ng-multiselect-dropdown-angular7>\r\n                  <!-- <select *ngIf=\"outputs.length>0\" class=\"form-control\" placeholder=\"Fitness Categories\"\r\n                      name=\"fit_cat\" id=\"exampleFormControlSelect1\" multiple=\"multiple\" ngModel>\r\n                      <option selected>Fitness Categories</option>\r\n                      <option *ngFor=\"let out of outputs\" [value]=\"out._id\">{{out.name}}</option>\r\n\r\n                    </select> -->\r\n                  <img src=\"./assets/images/fitness-category.png\" alt=\"trainasyougo\">\r\n                </div>\r\n              </div>\r\n              <div class=\"col-md-2 add-or\">\r\n                <!-- <h5>or</h5> -->\r\n                <div class=\"search-fitness\">\r\n                  <input ngx-google-places-autocomplete class=\"form-control\" [options]='options' #placesRef=\"ngx-places\"\r\n                    (onAddressChange)=\"handleAddressChange($event)\" placeholder=\"Search location\" />\r\n                  <!-- <input type=\"text\" class=\"form-control\" id=\"\" name=\"searchfitservices\" aria-describedby=\"\" placeholder=\"Search location\" ngModel> -->\r\n                  <!-- <img src=\"./assets/images/location-icons.png\" alt=\"trainasyougo\"> -->\r\n                  <i class=\"fa fa-map-marker\"></i>\r\n                </div>\r\n              </div>\r\n              <div class=\"col-md-3 text-right\">\r\n                <div class=\"search-btn\">\r\n                  <button type=\"button\" class=\"btn btn-primary\" (click)=\"onClickSubmit()\">\r\n                    <i class=\"fa fa-search\"></i>Search\r\n                  </button>\r\n                  <ul class=\"nav navbar-nav profile-menu\" *ngIf=\"user_det!=null\">\r\n                    <li class=\"nav-item dropdown\">\r\n                      <a href=\"#\" class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\">Guest User</a>\r\n                      <div class=\"dropdown-menu dropdown-menu-right\">\r\n                        <!-- <a href=\"#\" class=\"dropdown-item\"><i class=\"fa fa-user\"></i>Profile</a> -->\r\n                        <!-- <a href=\"#\" class=\"dropdown-item\"><i class=\"fa fa-cog\"></i>Settings</a> -->\r\n                        <div class=\"dropdown-divider\"></div>\r\n                        <a href=\"#\" (click)=\"logout()\" class=\"dropdown-item\"><i class=\"fa fa-sign-out\"></i>Logout</a>\r\n                      </div>\r\n                    </li>\r\n                  </ul>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <!-- </form> -->\r\n      </div>\r\n      <div class=\"col-md-10 col-sm-10 col-10\" [ngClass]=\"(closestatus != true)?'active':'inactive'\">\r\n        <div class=\"right-panel\">\r\n          <div class=\"rgt-side\">\r\n            <button type=\"submit\" class=\"btn btn-primary\" (click)=\"open_search_bar()\"><img src=\"./assets/images/open-icon.png\" alt=\"trainasugo\">Open Search Area</button>\r\n            <input type=\"hidden\" #nameInput name=\"distance\" id=\"distance\" value=\"20km\">\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -220,6 +220,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ngx_google_places_autocomplete__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(ngx_google_places_autocomplete__WEBPACK_IMPORTED_MODULE_17__);
 /* harmony import */ var ng_multiselect_dropdown_angular7__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-multiselect-dropdown-angular7 */ "./node_modules/ng-multiselect-dropdown-angular7/fesm2015/ng-multiselect-dropdown-angular7.js");
 /* harmony import */ var _ngx_share_button__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @ngx-share/button */ "./node_modules/@ngx-share/button/fesm2015/ngx-share-button.js");
+/* harmony import */ var ng5_slider__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ng5-slider */ "./node_modules/ng5-slider/esm2015/ng5-slider.js");
+
 
 
 
@@ -261,6 +263,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             ng_starrating__WEBPACK_IMPORTED_MODULE_16__["RatingModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__["BrowserAnimationsModule"],
             ngx_google_places_autocomplete__WEBPACK_IMPORTED_MODULE_17__["GooglePlaceModule"],
+            ng5_slider__WEBPACK_IMPORTED_MODULE_20__["Ng5SliderModule"],
             ng_multiselect_dropdown_angular7__WEBPACK_IMPORTED_MODULE_18__["NgMultiSelectDropDownModule"].forRoot(),
             _agm_core__WEBPACK_IMPORTED_MODULE_15__["AgmCoreModule"].forRoot({
                 // please get your own API key here:
@@ -326,7 +329,7 @@ FooterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".active{\n  display: block;  \n}\n.inactive{\n    display: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0FBQ2hCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYWN0aXZle1xuICBkaXNwbGF5OiBibG9jazsgIFxufVxuLmluYWN0aXZle1xuICAgIGRpc3BsYXk6IG5vbmU7XG59Il19 */"
+module.exports = ".active{\n  display: block !important;  \n}\n.inactive{\n    display: none !important;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx5QkFBeUI7QUFDM0I7QUFDQTtJQUNJLHdCQUF3QjtBQUM1QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFjdGl2ZXtcbiAgZGlzcGxheTogYmxvY2sgIWltcG9ydGFudDsgIFxufVxuLmluYWN0aXZle1xuICAgIGRpc3BsYXk6IG5vbmUgIWltcG9ydGFudDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -346,6 +349,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _loader_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../loader.service */ "./src/app/loader.service.ts");
 /* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../data.service */ "./src/app/data.service.ts");
+/* harmony import */ var ng5_slider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng5-slider */ "./node_modules/ng5-slider/esm2015/ng5-slider.js");
+
 
 
 
@@ -361,6 +366,21 @@ let HeaderComponent = class HeaderComponent {
         this.lat = 53.350140;
         this.lng = -6.266155;
         this.place_id = "0";
+        this.value = 5;
+        this.options = {
+            floor: 0,
+            ceil: 20,
+            translate: (value, label) => {
+                switch (label) {
+                    case ng5_slider__WEBPACK_IMPORTED_MODULE_6__["LabelType"].Low:
+                        return value + ' km';
+                    case ng5_slider__WEBPACK_IMPORTED_MODULE_6__["LabelType"].High:
+                        return value + ' km';
+                    default:
+                        return value + ' km';
+                }
+            }
+        };
         this.dropdownList = [];
         this.selectedItems = [];
         this.selItems = [];
@@ -389,7 +409,9 @@ let HeaderComponent = class HeaderComponent {
     onClickSubmit(data) {
         this.close();
         this.loaderService.display(true);
-        let distance = this.nameInput.nativeElement.value;
+        //let distance:any  = this.nameInput.nativeElement.value;
+        let distance = this.value + 'km';
+        //alert(distance);
         console.log(data);
         console.log(this.lat);
         console.log(this.selectedItems.sort());
@@ -473,7 +495,7 @@ let HeaderComponent = class HeaderComponent {
         //console.log(event);
     }
     close() {
-        if (this.innerWidth <= 400)
+        if (this.innerWidth <= 480)
             this.closestatus = false;
     }
     open_search_bar() {
@@ -523,7 +545,8 @@ let HeaderComponent = class HeaderComponent {
                 }
                 this.selectedItems = all;
                 this.loaderService.display(true);
-                let distance = this.nameInput.nativeElement.value;
+                //let distance:any  = this.nameInput.nativeElement.value;
+                let distance = this.value + 'km';
                 console.log(data);
                 console.log(this.lat);
                 console.log(this.selectedItems.sort());
@@ -1026,7 +1049,7 @@ let HomeComponent = class HomeComponent {
         this.data.changecat(this.selItem);
         //this.data.changecat(this.selItem);
         //this.data.changecat([]);
-        this.httpclient.post(this.serverUrl + 'placerecords', { distance: '20km', lat: this.lat, lng: this.lng, cat: this.selectedItem.sort(), place_id: 0 }).subscribe(datas => {
+        this.httpclient.post(this.serverUrl + 'placerecords', { distance: '5km', lat: this.lat, lng: this.lng, cat: this.selectedItem.sort(), place_id: 0 }).subscribe(datas => {
             this.loaderService.display(false);
             console.log(datas);
             //this.result = datas;
@@ -1053,7 +1076,7 @@ let HomeComponent = class HomeComponent {
                     this.lat = position.coords.latitude;
                     this.lng = position.coords.longitude;
                     this.getAddress(this.lat, this.lng);
-                    this.httpclient.post(this.serverUrl + 'placerecords', { distance: "20km", lat: this.lat, lng: this.lng, cat: [], place_id: '0' }).subscribe(datas => {
+                    this.httpclient.post(this.serverUrl + 'placerecords', { distance: "5km", lat: this.lat, lng: this.lng, cat: [], place_id: '0' }).subscribe(datas => {
                         this.loaderService.display(false);
                         this.placeList = datas;
                         this.markers = [];
@@ -1077,7 +1100,7 @@ let HomeComponent = class HomeComponent {
                     });
                 }
             }, (error) => {
-                this.httpclient.post(this.serverUrl + 'placerecords', { distance: "20km", lat: this.lat, lng: this.lng, cat: [], place_id: '0' }).subscribe(datas => {
+                this.httpclient.post(this.serverUrl + 'placerecords', { distance: "5km", lat: this.lat, lng: this.lng, cat: [], place_id: '0' }).subscribe(datas => {
                     this.loaderService.display(false);
                     this.placeList = datas;
                     this.markers = [];

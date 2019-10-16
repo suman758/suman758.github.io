@@ -2685,4 +2685,23 @@ button.btn.btn-primary.msg-btn {
 
 }
 
+.ng5-slider-span{
+  font-size: 10px !important;
+}
+
+@media only screen and (max-width:480px) {
+.ng5-slider .ng5-slider-bubble.ng5-slider-limit {
+  color: #ffffff !important;
+}
+.ng5-slider .ng5-slider-bubble.ng5-slider-model-value{
+  color: #ffffff !important;
+}
+}
+.ng5-slider .ng5-slider-bubble.ng5-slider-limit {
+  color: #adadad !important;
+}
+.ng5-slider .ng5-slider-bubble.ng5-slider-model-value{
+  color: #adadad !important;
+}
+
 /*ends on responsive css*/
