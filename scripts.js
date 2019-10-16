@@ -12037,7 +12037,7 @@ return jQuery;
       values: ['1km', '2km', '3km', '4km', '5km', '6km', '7km', '8km', '9km', '10km', '11km', '12km', '13km', '14km', '15km', '16km', '17km', '18km', '19km', '20km'],
       step: 1,
       range: false,
-      set: ['20km'],
+      set: ['5km'],
       tooltip: true,
       scale: true,
       labels: true,
